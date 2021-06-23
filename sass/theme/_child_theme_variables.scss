@@ -17,8 +17,19 @@ $tertiary: #818c3c;
 $quaternary: #72601b;
 $quinary: #593a0e;
 
+// Global variables
+$enable-shadows: true;
+$enable-responsive-font-sizes: true;
+
 // Body
 $body-bg: #eee;
 
-// Global variables
-$enable-shadows: true;
+// Typography;
+$font-family-cursive: "Comfortaa", cursive;
+$headings-font-family: $font-family-cursive;
+//$font-size-base: 1rem;
+// $h1-font-size: $font-size-base * 2.1;
+// $h2-font-size: $font-size-base * 1.6;
+// $h3-font-size: $font-size-base * 1.5;
+// $h4-font-size: $font-size-base * 1.25;
+// $h5-font-size: $font-size-base * 1.1;
