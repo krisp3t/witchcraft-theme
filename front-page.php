@@ -25,11 +25,10 @@ $container = get_theme_mod('understrap_container_type');
 <div id="carouselHeroImage" class="carousel slide" data-ride="carousel">
 	<div class="carousel-inner">
 		<div class="carousel-item active">
-			<img src="<?php echo get_stylesheet_directory_uri() . ("/img/hero.jpg"); ?>" class="d-block w-100 carousel-image" alt="Hero Image">
-			<div class="container d-flex">
-				<div class="carousel-caption justify-content-center align-items-center">
+			<div class="container d-flex h-100 align-items-center justify-content-center">
+				<div class="carousel-caption">
 					<h1>Witchcraft Theme</h1>
-					<p>A theme for witches and wizards. Made for WordPress blogs and WooCommerce stores.</p>
+					<h2>A theme for witches and wizards. Made for WordPress blogs and WooCommerce stores.</h2>
 				</div>
 			</div>
 		</div>
