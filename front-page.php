@@ -27,8 +27,8 @@ $container = get_theme_mod('understrap_container_type');
 		<div class="carousel-item active">
 			<div class="container d-flex h-100 align-items-center justify-content-center">
 				<div class="carousel-caption">
-					<h1>Witchcraft Theme</h1>
-					<h2>A theme for witches and wizards. Made for WordPress blogs and WooCommerce stores.</h2>
+					<h1 class="text-shadow-lg">Witchcraft Theme</h1>
+					<p class="text-shadow-lg">A theme for witches and wizards. Made for WordPress blogs and WooCommerce stores.</p>
 				</div>
 			</div>
 		</div>

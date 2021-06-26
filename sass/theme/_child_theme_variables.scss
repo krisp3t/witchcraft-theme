@@ -4,11 +4,9 @@
 // As example you find one of the most important Bootstrap variable below: $brand-primary.
 // Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
 // Just add your color code here, compile the theme.scss file to change this color everywhere
-
 //
 // Color system
 //
-
 // Witchcraft Theme variables
 // Color palette
 $primary: #25591f;
@@ -20,6 +18,9 @@ $quinary: #593a0e;
 // Global variables
 $enable-shadows: true;
 $enable-responsive-font-sizes: true;
+
+$text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+$text-shadow-lg: 2px 2px 2px rgba(0, 0, 0, 0.5);
 
 // Body
 $body-bg: #eee;
