@@ -8,6 +8,10 @@
 .text-shadow-lg {
 	text-shadow: $text-shadow-lg;
 }
+.bg-gray-900 {
+	background-color: $gray-900;
+	color: $gray-100;
+}
 
 // Header
 
@@ -35,6 +39,7 @@
 			right: 0px;
 			left: 0px;
 			right: 0px;
+			color: #fff;
 		}
 		h1 {
 			font-size: Min(4rem, calc(2.3rem + 1.5vw));
@@ -47,5 +52,11 @@
 		button {
 			font-size: calc(0.8rem + 0.5vw);
 		}
+	}
+}
+
+.witch-feature {
+	img {
+		object-fit: contain;
 	}
 }
