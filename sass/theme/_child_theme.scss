@@ -15,6 +15,9 @@
 #carouselHeroImage {
 	.carousel-item {
 		height: 50vh;
+		@media only screen and (max-height: 800px) {
+			height: 70vh;
+		}
 		background: rgba($black, 0.2);
 		&::before {
 			content: "";
@@ -34,12 +37,15 @@
 			right: 0px;
 		}
 		h1 {
-			font-size: calc(2.5rem + 1.5vw);
+			font-size: Min(4rem, calc(2.3rem + 1.5vw));
 		}
 		p {
-			font-size: calc(1rem + 0.5vw);
+			font-size: Min(2rem, calc(1rem + 0.5vh));
 			letter-spacing: 1.5px;
 			font-weight: 300;
+		}
+		button {
+			font-size: calc(0.8rem + 0.5vw);
 		}
 	}
 }
