@@ -46,3 +46,14 @@
 		color: $secondary;
 	}
 }
+
+.widget.woocommerce {
+	& > ul {
+		background: $gray-100;
+		box-shadow: $box-shadow-sm;
+	}
+	.product-categories {
+		list-style: none;
+		padding: $spacer * 1;
+	}
+}

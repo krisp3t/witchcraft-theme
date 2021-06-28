@@ -7,8 +7,9 @@
 @import "assets/font-awesome"; // <------- Font Awesome Icon font
 @import "assets/underscores"; // <------- Underscores media styles
 
-// Any additional imported files //
-@import "theme/child_theme"; // <------- Add your styles into this file
-@import "theme/child_theme_woocommerce"; // <------- Add your styles into this file
-@import "theme/child_theme_contact-form7"; // <------- Add your styles into this file
 //@import "../src/sass/understrap/theme/contact-form7"; // <------- Loads some basic styling for contact form 7 plugin
+
+// Witchcraft Theme //
+@import "theme/child_theme";
+@import "theme/child_theme_woocommerce";
+@import "theme/child_theme_forms";

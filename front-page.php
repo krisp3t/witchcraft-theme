@@ -29,7 +29,7 @@ $container = get_theme_mod('understrap_container_type');
 				<div class="carousel-caption">
 					<h1 class="text-shadow-lg">Witchcraft Theme</h1>
 					<p class="text-shadow-lg">A theme for witches and wizards. Made for WordPress blogs and WooCommerce stores.</p>
-					<button type="button" class="btn btn-secondary font-weight-bold"> Visit our store
+					<button type="button" class="btn btn-secondary font-weight-bold"> Read More
 					</button>
 				</div>
 			</div>
@@ -47,46 +47,57 @@ $container = get_theme_mod('understrap_container_type');
 					<div class="col-sm card text-center my-2 my-sm-0 mr-sm-2 py-3 shadow-sm border">
 						<i class="fa fa-shopping-cart fa-3x"></i>
 						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<h5 class="card-title">Awesome products</h5>
+							<p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam totam nobis necessitatibus labore quia cumque placeat non fugiat voluptates deleniti asperiores sit hic qui neque, dolores quos a suscipit eum.</p>
 						</div>
 					</div>
 					<div class="col-sm card text-center my-2 my-sm-0 mx-sm-2 py-3 shadow-sm border">
 						<i class="fa fa-users fa-3x"></i>
 						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<h5 class="card-title">Community</h5>
+							<p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum, aliquid eaque? Alias labore iusto sed placeat tempore iste expedita facilis!</p>
 						</div>
 					</div>
 					<div class="col-sm card text-center my-2 my-sm-0 ml-sm-2 py-3 shadow-sm border">
 						<i class="fa fa-book fa-3x"></i>
 						<div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+							<h5 class="card-title">Learning</h5>
+							<p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita provident eos dicta sint aliquid nemo est accusamus praesentium, nesciunt voluptate deserunt alias officia iste earum.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="witch-feature container-fluid">
-				<div class="row bg-gray-900 my-4 shadow-sm flex-column flex-md-row border border-light">
+				<div class="row bg-primary my-4 shadow-sm flex-column flex-md-row border border-light">
 					<div class="col p-3 d-flex align-content-center justify-content-center">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/hero.jpg" alt="" class="border">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/shop.jpg" alt="" class="border">
 					</div>
 					<div class="col pt-1 pb-3 py-md-5 px-4 mr-lg-1">
-						<h2 class="witch-feature-title">Advanced</h2>
-						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos error dolorem explicabo ullam soluta optio sit facilis vel, iure deleniti? Assumenda animi fugiat consectetur possimus incidunt ipsam maxime sed, reprehenderit cum quo velit voluptatibus repudiandae, iusto doloremque veniam. Dolorum reiciendis autem nesciunt aut. Neque minima commodi delectus similique perferendis sint!</p>
-						<button type="button" class="btn btn-secondary mb-3 font-weight-bold"> Read More
+						<h2 class="witch-feature-title">Shop</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sed, beatae exercitationem quam similique, voluptates fuga repellat cumque reiciendis labore adipisci. Itaque nihil voluptatum eum. Reprehenderit libero corporis molestias! Facilis pariatur recusandae rerum deserunt cumque excepturi aliquam commodi numquam iusto.</p>
+						<button type="button" class="btn btn-secondary mb-3 font-weight-bold"> Learn More
 						</button>
 					</div>
 				</div>
-				<div class="row bg-gray-witch my-4 shadow-sm flex-column flex-md-row-reverse border">
+				<div class="row bg-secondary my-4 shadow-sm flex-column flex-md-row-reverse border">
 					<div class="col p-3 d-flex align-content-center justify-content-center">
-						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/hero.jpg" alt="" class="border">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/community.jpg" alt="" class="border">
 					</div>
 					<div class="col pt-1 pb-3 py-md-5 px-4 mr-lg-1">
-						<h2 class="witch-feature-title">Advanced</h2>
-						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos error dolorem explicabo ullam soluta optio sit facilis vel, iure deleniti? Assumenda animi fugiat consectetur possimus incidunt ipsam maxime sed, reprehenderit cum quo velit voluptatibus repudiandae, iusto doloremque veniam. Dolorum reiciendis autem nesciunt aut. Neque minima commodi delectus similique perferendis sint!</p>
-						<button type="button" class="btn btn-secondary mb-3 font-weight-bold"> Read More
+						<h2 class="witch-feature-title">Community</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quidem illo porro voluptatibus harum beatae adipisci officiis est molestiae delectus?</p>
+						<button type="button" class="btn btn-primary mb-3 font-weight-bold">Learn More
+						</button>
+					</div>
+				</div>
+				<div class="row bg-light my-4 shadow-sm flex-column flex-md-row border border-light">
+					<div class="col p-3 d-flex align-content-center justify-content-center">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/container3.png" alt="" class="border">
+					</div>
+					<div class="col pt-1 pb-3 py-md-5 px-4 mr-lg-1">
+						<h2 class="witch-feature-title">Learning</h2>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, provident consequuntur! Incidunt, perspiciatis consequatur voluptas esse culpa laborum ea consequuntur nobis deleniti reiciendis, vero sunt! Sequi voluptate molestias beatae ut.</p>
+						<button type="button" class="btn btn-secondary mb-3 font-weight-bold"> Learn More
 						</button>
 					</div>
 				</div>
