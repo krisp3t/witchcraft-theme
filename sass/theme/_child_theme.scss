@@ -17,7 +17,15 @@
 	color: $gray-100;
 }
 
-// Header
+// Global
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+}
 
 // Frontpage
 #carouselHeroImage {
@@ -50,7 +58,7 @@
 		}
 		p {
 			font-size: Min(2rem, calc(1rem + 0.5vh));
-			letter-spacing: 1.5px;
+			letter-spacing: $letter-spacing-lg;
 			font-weight: 300;
 		}
 		button {
@@ -62,5 +70,9 @@
 .witch-feature {
 	img {
 		object-fit: cover;
+	}
+	.witch-feature-title,
+	p {
+		margin-bottom: $container-mb;
 	}
 }

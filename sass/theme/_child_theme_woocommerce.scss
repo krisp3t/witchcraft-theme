@@ -1,0 +1,48 @@
+.woocommerce div.product,
+.woocommerce ul.products {
+	.product_title {
+		font-weight: bold;
+	}
+	.price,
+	.stock,
+	.onsale,
+	.discount td {
+		color: $gray-700 !important;
+		font-weight: bold !important;
+		font-family: $font-family-cursive;
+		letter-spacing: $letter-spacing-lg;
+	}
+	li.product {
+		.woocommerce-loop-category__title,
+		.woocommerce-loop-product__title,
+		h3 {
+			font-weight: bold;
+		}
+	}
+}
+
+.woocommerce-input-wrapper {
+	.description {
+		background: $secondary;
+
+		&::before {
+			border-color: $secondary transparent transparent transparent;
+		}
+	}
+}
+
+.woocommerce-info {
+	border-top-color: $secondary;
+
+	&::before {
+		color: $secondary;
+	}
+}
+
+.woocommerce-message {
+	border-top-color: $secondary;
+
+	&::before {
+		color: $secondary;
+	}
+}

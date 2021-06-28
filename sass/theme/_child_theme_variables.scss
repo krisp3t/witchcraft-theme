@@ -9,8 +9,8 @@
 //
 // Witchcraft Theme variables
 // Color palette
-$primary: #ca26a7;
-//$primary: #25591f;
+// $primary: #ca26a7;
+$primary: #25591f;
 $secondary: #357f2c;
 $white: rgb(250, 250, 250);
 
@@ -33,6 +33,10 @@ $container-max-widths: (
 
 $text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 $text-shadow-lg: 2px 2px 2px rgba(0, 0, 0, 0.5);
+$letter-spacing-lg: 1.5px;
+
+// Utility variables
+$container-mb: 1rem;
 
 // WooCommerce
 $woocommerce: $primary;

@@ -69,22 +69,22 @@ $container = get_theme_mod('understrap_container_type');
 			</div>
 			<div class="witch-feature container-fluid">
 				<div class="row bg-gray-900 my-4 shadow-sm flex-column flex-md-row border border-light">
-					<div class="col p-4 d-flex align-content-center justify-content-center">
+					<div class="col p-3 d-flex align-content-center justify-content-center">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/hero.jpg" alt="" class="border">
 					</div>
-					<div class="col pt-0 pt-md-4 pr-4 pb-4 pl-4 pl-md-3 mr-lg-1">
-						<h2>Advanced</h2>
+					<div class="col pt-1 pb-3 py-md-5 px-4 mr-lg-1">
+						<h2 class="witch-feature-title">Advanced</h2>
 						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos error dolorem explicabo ullam soluta optio sit facilis vel, iure deleniti? Assumenda animi fugiat consectetur possimus incidunt ipsam maxime sed, reprehenderit cum quo velit voluptatibus repudiandae, iusto doloremque veniam. Dolorum reiciendis autem nesciunt aut. Neque minima commodi delectus similique perferendis sint!</p>
 						<button type="button" class="btn btn-secondary mb-3 font-weight-bold"> Read More
 						</button>
 					</div>
 				</div>
 				<div class="row bg-gray-witch my-4 shadow-sm flex-column flex-md-row-reverse border">
-					<div class="col p-4 d-flex align-content-center justify-content-center">
+					<div class="col p-3 d-flex align-content-center justify-content-center">
 						<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/hero.jpg" alt="" class="border">
 					</div>
-					<div class="col pt-0 pt-md-4 pl-4 pb-4 pr-4 pr-md-3 mr-lg-1">
-						<h2>Advanced</h2>
+					<div class="col pt-1 pb-3 py-md-5 px-4 mr-lg-1">
+						<h2 class="witch-feature-title">Advanced</h2>
 						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos error dolorem explicabo ullam soluta optio sit facilis vel, iure deleniti? Assumenda animi fugiat consectetur possimus incidunt ipsam maxime sed, reprehenderit cum quo velit voluptatibus repudiandae, iusto doloremque veniam. Dolorum reiciendis autem nesciunt aut. Neque minima commodi delectus similique perferendis sint!</p>
 						<button type="button" class="btn btn-secondary mb-3 font-weight-bold"> Read More
 						</button>
