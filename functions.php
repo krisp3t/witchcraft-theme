@@ -60,22 +60,22 @@ function my_acf_init_block_types()
 	if (function_exists('acf_register_block_type')) {
 		// Register ACF blocks
 		acf_register_block_type(array(
-			'name'              => 'features',
+			'name'              => 'feature-cols',
 			'title'             => __('Feature Columns'),
 			'description'       => __('Three columns for features with icons.'),
-			'render_template'   => 'template-parts/blocks/features/features.php',
+			'render_template'   => 'template-parts/blocks/feature-cols.php',
 			'category'          => 'witch',
 			'icon'              => 'columns',
-			'keywords'          => array('icons', 'column', 'feature'),
+			'keywords'          => array('icons', 'column', 'feature', 'columns'),
 		));
 		acf_register_block_type(array(
-			'name'              => 'testimonial',
-			'title'             => __('Testimonial'),
-			'description'       => __('A testimonial block with a column of text and an image.'),
-			'render_template'   => 'template-parts/blocks/testimonial/testimonial.php',
+			'name'              => 'feature-container',
+			'title'             => __('Feature Container'),
+			'description'       => __('A feature container with an image, text and button.'),
+			'render_template'   => 'template-parts/blocks/feature-container.php',
 			'category'          => 'witch',
 			'icon'              => 'align-pull-left',
-			'keywords'          => array('testimonial', 'image'),
+			'keywords'          => array('testimonial', 'feature', 'container', 'flex'),
 		));
 	}
 }

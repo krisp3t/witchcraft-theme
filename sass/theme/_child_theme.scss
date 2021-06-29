@@ -9,6 +9,13 @@
 		@return $gray-100;
 	}
 }
+
+// Mixins
+@mixin utility-class($my-color) {
+	background-color: $my-color;
+	color: set-text-color($my-color);
+}
+
 // Utility classes
 .text-shadow {
 	text-shadow: $text-shadow;
@@ -16,6 +23,7 @@
 .text-shadow-lg {
 	text-shadow: $text-shadow-lg;
 }
+
 .bg-gray-witch {
 	background-color: #ededed;
 	color: $gray-900;
@@ -25,10 +33,16 @@
 	color: $gray-100;
 }
 .bg-primary {
-	color: set-text-color($primary);
+	@include utility-class($primary);
 }
 .bg-secondary {
-	color: set-text-color($secondary);
+	@include utility-class($secondary);
+}
+.bg-light {
+	@include utility-class($light);
+}
+.bg-dark {
+	@include utility-class($dark);
 }
 
 // Global
@@ -81,7 +95,7 @@ h6 {
 	}
 }
 
-.witch-feature {
+.witch-feature-container {
 	img {
 		object-fit: cover;
 	}
