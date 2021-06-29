@@ -10,12 +10,6 @@
 	}
 }
 
-// Mixins
-@mixin utility-class($my-color) {
-	background-color: $my-color;
-	color: set-text-color($my-color);
-}
-
 // Utility classes
 .text-shadow {
 	text-shadow: $text-shadow;
@@ -24,25 +18,17 @@
 	text-shadow: $text-shadow-lg;
 }
 
-.bg-gray-witch {
-	background-color: #ededed;
-	color: $gray-900;
-}
-.bg-gray-900 {
-	background-color: $gray-900;
-	color: $gray-100;
-}
-.bg-primary {
-	@include utility-class($primary);
-}
-.bg-secondary {
-	@include utility-class($secondary);
-}
-.bg-light {
-	@include utility-class($light);
-}
-.bg-dark {
-	@include utility-class($dark);
+$utility-colors: (
+	primary: $primary,
+	secondary: $secondary,
+	light: $gray-100,
+	dark: $gray-900,
+);
+@each $name, $color in $utility-colors {
+	.bg-#{$name} {
+		background-color: $color;
+		color: set-text-color($color);
+	}
 }
 
 // Global
@@ -55,7 +41,7 @@ h6 {
 	font-weight: bold;
 }
 
-// Frontpage
+// Blocks
 #carouselHeroImage {
 	.carousel-item {
 		height: 50vh;
