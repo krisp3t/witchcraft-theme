@@ -2,11 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700");
 
 // Functions
-@function set-text-color($color) {
+@function color-contrast($color) {
 	@if (lightness($color) > 50) {
 		@return $gray-900;
 	} @else {
 		@return $gray-100;
+	}
+}
+@function color-match($color) {
+	@if (lightness($color) > 50) {
+		@return $gray-200;
+	} @else {
+		@return $gray-800;
 	}
 }
 
@@ -21,13 +28,24 @@
 $utility-colors: (
 	primary: $primary,
 	secondary: $secondary,
-	light: $gray-100,
-	dark: $gray-900,
+	gray-200: $gray-200,
+	gray-900: $gray-900,
 );
 @each $name, $color in $utility-colors {
 	.bg-#{$name} {
 		background-color: $color;
-		color: set-text-color($color);
+		color: color-contrast($color);
+		.witch-feature-container-image {
+			border: 1px solid rgba(color-contrast($color), 0.4);
+		}
+	}
+	.button-#{$name} {
+		background-color: $color;
+		color: color-contrast($color);
+		&:hover {
+			background-color: scale-color($color, $lightness: -20%);
+			color: scale-color(color-contrast($color), $lightness: -20%);
+		}
 	}
 }
 
@@ -85,8 +103,11 @@ h6 {
 	img {
 		object-fit: cover;
 	}
-	.witch-feature-title,
-	p {
+	.witch-feature-title {
 		margin-bottom: $container-mb;
+		margin-left: -1px;
+	}
+	button {
+		margin-top: 0.5rem;
 	}
 }

@@ -31,7 +31,7 @@ $image = get_field('image') ?: 295;
 $title = get_field('title') ?: 'Your Title';
 $text = get_field('text') ?: 'Your text here...';
 $button_text = get_field('button_text') ?: $button_text_empty = "d-none";
-$button_color = get_field('button_color') ?: 'bg-secondary';
+$button_color = get_field('button_color') ?: 'button-secondary';
 $background_color = get_field('background_color') ?: 'bg-primary';
 $image_position = get_field('image_position') ?: 'flex-md-row';
 // Set up variables
@@ -41,7 +41,7 @@ $flex = ($image_position === "left") ? "flex-md-row" : "flex-md-row-reverse";
 <div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> witch-feature-container <?php echo "$flex $background_color"; ?> flex-column row my-4 shadow-sm  border">
 	<div class="col p-3 d-flex align-content-center justify-content-center">
 		<?php echo wp_get_attachment_image($image, 'full', "", array(
-			"class" => "border"
+			"class" => "witch-feature-container-image"
 		)); ?>
 	</div>
 	<div class="col pt-1 pb-3 py-md-5 px-4 mr-lg-1">
