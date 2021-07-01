@@ -37,17 +37,18 @@ $image_position = get_field('image_position') ?: 'flex-md-row';
 // Set up variables
 $flex = ($image_position === "left") ? "flex-md-row" : "flex-md-row-reverse";
 ?>
-
-<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> witch-feature-container <?php echo "$flex $background_color"; ?> flex-column row my-4 shadow-sm  border">
-	<div class="col p-3 d-flex align-content-center justify-content-center">
-		<?php echo wp_get_attachment_image($image, 'full', "", array(
-			"class" => "witch-feature-container-image"
-		)); ?>
-	</div>
-	<div class="col pt-1 pb-3 py-md-5 px-4 mr-lg-1">
-		<h2 class="witch-feature-title"><?php echo $title; ?></h2>
-		<p><?php echo $text; ?></p>
-		<button type="button" class="<?php echo "$button_text_empty $button_color" ?> btn mb-3 font-weight-bold"> <?php echo $button_text; ?>
-		</button>
+<div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> container-fluid witch-feature-container">
+	<div class="<?php echo "$flex $background_color"; ?> flex-column row my-4 shadow-sm border">
+		<div class="col p-3 d-flex align-content-center justify-content-center">
+			<?php echo wp_get_attachment_image($image, 'full', "", array(
+				"class" => "witch-feature-container-image"
+			)); ?>
+		</div>
+		<div class="col pt-1 pb-3 py-md-5 px-4 mr-lg-1">
+			<h2 class="witch-feature-title"><?php echo $title; ?></h2>
+			<p><?php echo $text; ?></p>
+			<button type="button" class="<?php echo "$button_text_empty $button_color" ?> btn mb-3 font-weight-bold"> <?php echo $button_text; ?>
+			</button>
+		</div>
 	</div>
 </div>
