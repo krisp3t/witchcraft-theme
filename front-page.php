@@ -20,17 +20,17 @@ get_header();
 $container = get_theme_mod('understrap_container_type');
 ?>
 
-
+<!-- ACF  -->
 <!-- Carousel -->
-<div id="carouselHeroImage" class="carousel slide shadow-sm" data-ride="carousel">
+<div class="hero-image carousel slide shadow-sm" data-ride="carousel">
 	<div class="carousel-inner">
-		<div class="carousel-item active">
+		<div class="carousel-item active" style="--hero-background-url: url('<?php the_field('hero_image'); ?>'); --hero-background-position: <?php the_field('hero_image_position'); ?>%;">
 			<div class="container d-flex h-100 align-items-center justify-content-center">
 				<div class="carousel-caption">
-					<h1 class="text-shadow-lg">Witchcraft Theme</h1>
-					<p class="text-shadow-lg">A theme for witches and wizards. Made for WordPress blogs and WooCommerce stores.</p>
-					<button type="button" class="btn btn-secondary font-weight-bold"> Read More
-					</button>
+					<h1 class="text-shadow-lg"><?php the_field('hero_title'); ?></h1>
+					<p class="text-shadow-lg"><?php the_field('hero_subtitle'); ?></p>
+					<a href="<?php the_field('hero_button_link'); ?>"><button type="button" class="btn <?php the_field('hero_button_color'); ?> font-weight-bold"> <?php the_field('hero_button_text'); ?>
+						</button></a>
 				</div>
 			</div>
 		</div>
