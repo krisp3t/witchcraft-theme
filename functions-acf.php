@@ -1,4 +1,5 @@
-<?php if (function_exists('acf_add_local_field_group')) :
+<?php
+if (function_exists('acf_add_local_field_group')) :
 
 	acf_add_local_field_group(array(
 		'key' => 'group_60dd82b6d1c8d',
@@ -309,6 +310,25 @@ The format is "fa fa-iconname"',
 				'return_format' => 'value',
 				'ajax' => 0,
 				'placeholder' => '',
+			),
+			array(
+				'key' => 'field_60ddfdeea0efe',
+				'label' => 'Button Link',
+				'name' => 'button_link',
+				'type' => 'text',
+				'instructions' => 'Value in a href="" tag.',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => 'https://google.com',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'maxlength' => '',
 			),
 			array(
 				'key' => 'field_60db21441144d',

@@ -30,8 +30,9 @@ $button_text_empty = "";
 $image = get_field('image') ?: 295;
 $title = get_field('title') ?: 'Your Title';
 $text = get_field('text') ?: 'Your text here...';
-$button_text = get_field('button_text') ?: $button_text_empty = "d-none";
+$button_text = get_field('button_text') ?: $button_text_empty = 'd-none';
 $button_color = get_field('button_color') ?: 'button-secondary';
+$button_link = get_field('button_link') ?: 'button-link';
 $background_color = get_field('background_color') ?: 'bg-primary';
 $image_position = get_field('image_position') ?: 'flex-md-row';
 // Set up variables
@@ -47,8 +48,8 @@ $flex = ($image_position === "left") ? "flex-md-row" : "flex-md-row-reverse";
 		<div class="col pt-1 pb-3 py-md-5 px-4 mr-lg-1">
 			<h2 class="witch-feature-title"><?php echo $title; ?></h2>
 			<p><?php echo $text; ?></p>
-			<button type="button" class="<?php echo "$button_text_empty $button_color" ?> btn mb-3 font-weight-bold"> <?php echo $button_text; ?>
-			</button>
+			<a href="<?php echo "$button_link" ?>"><button type="button" class="<?php echo "$button_text_empty $button_color" ?> btn mb-3 font-weight-bold"> <?php echo $button_text; ?>
+				</button></a>
 		</div>
 	</div>
 </div>
