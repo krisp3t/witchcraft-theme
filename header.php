@@ -40,7 +40,7 @@ $container = get_theme_mod('understrap_container_type');
 				</h2>
 
 				<?php if ('container' === $container) : ?>
-					<div class="container">
+					<div class="container-fluid">
 					<?php endif; ?>
 
 					<!-- Your site title as branding in the menu -->

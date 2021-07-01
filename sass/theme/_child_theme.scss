@@ -60,6 +60,12 @@ h6 {
 	font-weight: bold;
 }
 
+// Main Menu
+#main-menu > li {
+	padding-left: map-get($spacers, 1);
+	padding-right: map-get($spacers, 1);
+}
+
 // Blocks
 .hero-image {
 	.carousel-item {
