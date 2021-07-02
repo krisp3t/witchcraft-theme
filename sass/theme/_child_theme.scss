@@ -60,6 +60,10 @@ h6 {
 	font-weight: bold;
 }
 
+h1 {
+	margin-bottom: $h1-mb;
+}
+
 // Main Menu
 #main-menu > li {
 	padding-left: map-get($spacers, 1);
@@ -95,14 +99,16 @@ h6 {
 		}
 		h1 {
 			font-size: Min(4rem, calc(2.3rem + 1.5vw));
+			margin-bottom: 0.5rem;
 		}
 		p {
 			font-size: Min(2rem, calc(1rem + 0.5vh));
 			letter-spacing: $letter-spacing-lg;
 			font-weight: 300;
+			margin-bottom: 1.5rem;
 		}
 		button {
-			font-size: calc(0.8rem + 0.5vw);
+			font-size: calc(0.75rem + 0.5vw);
 		}
 	}
 }
@@ -111,11 +117,11 @@ h6 {
 	img {
 		object-fit: cover;
 	}
-	.witch-feature-title {
-		margin-bottom: $container-mb;
-		margin-left: -1px;
-	}
 	button {
 		margin-top: 0.5rem;
+	}
+	.witch-feature-title {
+		margin-bottom: $h1-mb;
+		margin-left: -1px;
 	}
 }

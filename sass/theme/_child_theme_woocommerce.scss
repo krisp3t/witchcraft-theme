@@ -1,3 +1,4 @@
+// Use our color palette
 .woocommerce div.product,
 .woocommerce ul.products {
 	.product_title {
@@ -50,6 +51,7 @@
 	}
 }
 
+// Widget
 .widget.woocommerce {
 	& > ul {
 		background: $gray-100;
@@ -61,6 +63,7 @@
 	}
 }
 
+// Pagination
 .woocommerce-pagination ul.page-numbers {
 	display: flex !important;
 	@include list-unstyled();
@@ -102,26 +105,22 @@
 	}
 }
 
-//
-// Sizing
-//
-
-.pagination-lg {
-	@include pagination-size(
-		$pagination-padding-y-lg,
-		$pagination-padding-x-lg,
-		$font-size-lg,
-		$line-height-lg,
-		$pagination-border-radius-lg
-	);
-}
-
-.pagination-sm {
-	@include pagination-size(
-		$pagination-padding-y-sm,
-		$pagination-padding-x-sm,
-		$font-size-sm,
-		$line-height-sm,
-		$pagination-border-radius-sm
-	);
+// My Account
+#customer_login {
+	span.password-input {
+		width: 100%;
+	}
+	.u-column1,
+	.u-column2 {
+		.woocommerce-form {
+			padding: $spacer * 1.5;
+			box-shadow: $box-shadow;
+			.form-row {
+				padding: 0;
+			}
+			#reg_email {
+				margin-bottom: 1rem;
+			}
+		}
+	}
 }

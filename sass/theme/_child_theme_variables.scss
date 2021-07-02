@@ -8,19 +8,12 @@
 // Witchcraft Theme variables
 
 // Color palette
-// Pink test
-// $primary: #ca26a7;
-// Old
-//$primary: #25591f;
-//$secondary: #357f2c;
-
 $primary: #30662f;
 $secondary: #c0b19a;
 $white: rgb(250, 250, 250);
 
 // Global variables
 $enable-shadows: true;
-$enable-responsive-font-sizes: true;
 $grid-breakpoints: (
 	xs: 0,
 	sm: 576px,
@@ -35,20 +28,19 @@ $container-max-widths: (
 	xl: 1240px,
 ) !default;
 
-$text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-$text-shadow-lg: 2px 2px 2px rgba(0, 0, 0, 0.5);
-$letter-spacing-lg: 1.5px;
-
-// Utility variables
-$container-mb: 1rem;
-
-// WooCommerce
-$woocommerce: $primary;
-$green: $primary;
+// Utility Classes
+$box-shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+$box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.15);
 
 // Body
 $body-bg: #e9ecef; // gray-200
 
-// Typography;
+// Typography
+$enable-responsive-font-sizes: true;
 $font-family-cursive: "Comfortaa", cursive;
 $headings-font-family: $font-family-cursive;
+$text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+$text-shadow-lg: 2px 2px 2px rgba(0, 0, 0, 0.5);
+$letter-spacing-lg: 1.5px;
+
+$h1-mb: 1rem; // Margin bottom
