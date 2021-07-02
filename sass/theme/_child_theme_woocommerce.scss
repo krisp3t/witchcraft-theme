@@ -60,3 +60,68 @@
 		padding: $spacer * 1;
 	}
 }
+
+.woocommerce-pagination ul.page-numbers {
+	display: flex !important;
+	@include list-unstyled();
+	@include border-radius();
+	border: 0 !important;
+
+	li {
+		border-right: 0 !important;
+		&:first-child {
+			.page-numbers {
+				margin-left: 0;
+				@include border-left-radius($border-radius);
+			}
+		}
+		&:last-child {
+			.page-numbers {
+				@include border-right-radius($border-radius);
+			}
+		}
+
+		.page-numbers {
+			position: relative;
+			display: block;
+			padding: $pagination-padding-y $pagination-padding-x;
+			margin-left: -$pagination-border-width;
+			line-height: $pagination-line-height;
+			color: $pagination-color;
+			text-decoration: if($link-decoration == none, null, none);
+			background-color: $pagination-bg;
+			border: $pagination-border-width solid $pagination-border-color;
+
+			&.current {
+				z-index: 3;
+				color: $pagination-active-color;
+				background-color: $pagination-active-bg;
+				border-color: $pagination-active-border-color;
+			}
+		}
+	}
+}
+
+//
+// Sizing
+//
+
+.pagination-lg {
+	@include pagination-size(
+		$pagination-padding-y-lg,
+		$pagination-padding-x-lg,
+		$font-size-lg,
+		$line-height-lg,
+		$pagination-border-radius-lg
+	);
+}
+
+.pagination-sm {
+	@include pagination-size(
+		$pagination-padding-y-sm,
+		$pagination-padding-x-sm,
+		$font-size-sm,
+		$line-height-sm,
+		$pagination-border-radius-sm
+	);
+}
