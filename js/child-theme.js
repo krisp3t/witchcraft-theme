@@ -7071,3 +7071,4 @@
 })();
 // Add your custom JS here.
 // Witchcraft Theme JS
+alert($.fn.jquery);

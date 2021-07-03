@@ -55,6 +55,7 @@ function witch_block_categories($categories)
 	);
 }
 add_filter('block_categories', 'witch_block_categories');
+
 // Portfolio Blocks
 add_action('acf/init', 'my_acf_init_block_types');
 function my_acf_init_block_types()
@@ -82,3 +83,31 @@ function my_acf_init_block_types()
 		));
 	}
 }
+
+// Shop Sidebar
+function register_additional_childtheme_sidebars()
+{
+	register_sidebar(array(
+		'id'            => 'shop-sidebar',
+		'name'          => __('Shop Sidebar', 'child-theme-textdomain'),
+		'description'   => __('Shop sidebar widget area', 'child-theme-textdomain'),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s" role="complementary">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	));
+}
+
+// Add shopping cart quantity
+add_action('init', 'register_additional_childtheme_sidebars');
+
+add_action('wp_head', 'witch_shopping_cart_after', 100);
+
+function witch_shopping_cart_after()
+{ ?>
+	<style>
+		.fa.fa-shopping-cart:after {
+			content: "<?php echo WC()->cart->get_cart_contents_count(); ?>";
+		}
+	</style> <?
+			}

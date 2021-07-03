@@ -45,19 +45,21 @@ $container = get_theme_mod('understrap_container_type');
 
 			<!-- Do the left sidebar check -->
 			<?php get_template_part('global-templates/left-sidebar-check'); ?>
-
+			<?php
+			if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('shop-sidebar'))
+			?>
 			<main class="site-main" id="main">
 
 				<?php
-				while (have_posts()) {
-					the_post();
-					get_template_part('loop-templates/content-front', 'page');
+			while (have_posts()) {
+				the_post();
+				get_template_part('loop-templates/content-front', 'page');
 
-					// If comments are open or we have at least one comment, load up the comment template.
-					if (comments_open() || get_comments_number()) {
-						comments_template();
-					}
+				// If comments are open or we have at least one comment, load up the comment template.
+				if (comments_open() || get_comments_number()) {
+					comments_template();
 				}
+			}
 				?>
 
 			</main><!-- #main -->
