@@ -1,0 +1,9 @@
+// Cookie Compliance
+#cookie-notice {
+	font-family: $font-family-sans-serif !important;
+	background-color: $gray-200;
+	.cn-set-cookie {
+		background-color: $primary;
+		font-family: inherit !important;
+	}
+}
