@@ -64,10 +64,15 @@ h1 {
 	margin-bottom: $h1-mb;
 }
 
-// Main Menu
-#main-menu > li {
-	padding-left: map-get($spacers, 1);
-	padding-right: map-get($spacers, 1);
+// Header
+#main-menu {
+	& > li {
+		padding-left: map-get($spacers, 1);
+		padding-right: map-get($spacers, 1);
+	}
+	.menu-item .nav-link .emoji {
+		vertical-align: -0.2em !important;
+	}
 }
 
 // Blocks

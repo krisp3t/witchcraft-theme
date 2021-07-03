@@ -7,3 +7,9 @@
 		font-family: inherit !important;
 	}
 }
+
+#languageSwitcher {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
