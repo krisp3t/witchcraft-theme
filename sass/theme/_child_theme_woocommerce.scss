@@ -147,24 +147,32 @@
 		img {
 			padding-bottom: 0.5rem;
 		}
+		.add-to-cart-container {
+			display: none;
+		}
 		a.woocommerce-loop-product__link {
 			text-decoration: underline transparent;
-			transition: text-decoration 0.5s;
-			&:hover {
-				text-decoration-color: $primary;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			&:hover > * {
+				text-decoration: underline $primary;
 			}
-
+			img {
+				margin-left: auto;
+				margin-right: auto;
+				box-shadow: $box-shadow-sm;
+				padding: 0;
+				margin: 1rem 0;
+			}
 			span.price {
+				text-decoration: underline transparent;
 				color: $gray-800;
 				font-weight: bold;
 				font-family: $font-family-cursive;
 				letter-spacing: $letter-spacing-lg;
+				margin-bottom: 1rem;
 			}
-		}
-
-		.add-to-cart-container {
-			margin-top: 0.5rem;
-			margin-bottom: 1rem;
 		}
 	}
 }

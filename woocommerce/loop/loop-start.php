@@ -20,4 +20,4 @@ if (!defined('ABSPATH')) {
 	exit;
 }
 ?>
-<ul class="witch-products row row-cols-3">
+<ul class="witch-products row row-cols-1 row-cols-sm-2 row-cols-lg-3 text-center">
