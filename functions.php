@@ -109,5 +109,5 @@ function witch_shopping_cart_after()
 		.fa.fa-shopping-cart:after {
 			content: "<?php echo WC()->cart->get_cart_contents_count(); ?>";
 		}
-	</style> <?
+	</style> <?php
 			}
