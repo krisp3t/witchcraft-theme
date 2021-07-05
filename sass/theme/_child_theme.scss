@@ -132,8 +132,7 @@ h1 {
 }
 
 // Shopping cart number
-.fa.fa-shopping-cart:after {
-	content: "2";
+#main-nav .fa.fa-shopping-cart:after {
 	position: absolute;
 	border-radius: 50%;
 	margin-top: 10px;

@@ -1,8 +1,9 @@
 // Use our color palette
 .woocommerce div.product,
-.woocommerce ul.products {
+.woocommerce ul.witch-products {
 	.product_title {
 		font-weight: bold;
+		color: $primary;
 	}
 	.price,
 	.stock,
