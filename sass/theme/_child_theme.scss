@@ -65,13 +65,26 @@ h1 {
 }
 
 // Header
-#main-menu {
-	& > li {
-		padding-left: map-get($spacers, 1);
-		padding-right: map-get($spacers, 1);
+#main-nav {
+	// Retina nav-brand
+	img {
+		max-height: 50px;
+		object-fit: contain;
+		object-position: left;
+		// Mobile fix (on same row)
+		@include media-breakpoint-down(sm) {
+			max-width: 50vw;
+		}
 	}
-	.menu-item .nav-link .emoji {
-		vertical-align: -0.2em !important;
+
+	#main-menu {
+		& > li {
+			padding-left: map-get($spacers, 1);
+			padding-right: map-get($spacers, 1);
+		}
+		.menu-item .nav-link .emoji {
+			vertical-align: -0.2em !important;
+		}
 	}
 }
 
