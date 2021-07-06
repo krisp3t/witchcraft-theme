@@ -1,3 +1,10 @@
+// Container-fluid with 80% width
+.container-fluid.container-shop {
+	@include media-breakpoint-up(xl) {
+		width: 80%;
+	}
+}
+
 // Use our color palette
 .woocommerce div.product,
 .woocommerce ul.witch-products {
@@ -65,42 +72,48 @@
 }
 
 // Pagination
-.woocommerce-pagination ul.page-numbers {
-	display: flex !important;
-	@include list-unstyled();
-	@include border-radius();
-	border: 0 !important;
+.woocommerce-pagination {
+	display: flex;
+	margin-top: 3rem;
 
-	li {
-		border-right: 0 !important;
-		&:first-child {
-			.page-numbers {
-				margin-left: 0;
-				@include border-left-radius($border-radius);
+	ul.page-numbers {
+		@include list-unstyled();
+		@include border-radius();
+		display: flex !important;
+		border: 0 !important;
+		margin: auto !important;
+
+		li {
+			border-right: 0 !important;
+			&:first-child {
+				.page-numbers {
+					margin-left: 0;
+					@include border-left-radius($border-radius);
+				}
 			}
-		}
-		&:last-child {
-			.page-numbers {
-				@include border-right-radius($border-radius);
+			&:last-child {
+				.page-numbers {
+					@include border-right-radius($border-radius);
+				}
 			}
-		}
 
-		.page-numbers {
-			position: relative;
-			display: block;
-			padding: $pagination-padding-y $pagination-padding-x;
-			margin-left: -$pagination-border-width;
-			line-height: $pagination-line-height;
-			color: $pagination-color;
-			text-decoration: if($link-decoration == none, null, none);
-			background-color: $pagination-bg;
-			border: $pagination-border-width solid $pagination-border-color;
+			.page-numbers {
+				position: relative;
+				display: block;
+				padding: $pagination-padding-y $pagination-padding-x;
+				margin-left: -$pagination-border-width;
+				line-height: $pagination-line-height;
+				color: $pagination-color;
+				text-decoration: if($link-decoration == none, null, none);
+				background-color: $pagination-bg;
+				border: $pagination-border-width solid $pagination-border-color;
 
-			&.current {
-				z-index: 3;
-				color: $pagination-active-color;
-				background-color: $pagination-active-bg;
-				border-color: $pagination-active-border-color;
+				&.current {
+					z-index: 3;
+					color: $pagination-active-color;
+					background-color: $pagination-active-bg;
+					border-color: $pagination-active-border-color;
+				}
 			}
 		}
 	}
@@ -160,11 +173,12 @@
 				text-decoration: underline $primary;
 			}
 			img {
-				margin-left: auto;
-				margin-right: auto;
 				box-shadow: $box-shadow-sm;
 				padding: 0;
-				margin: 1rem 0;
+				margin: 1rem auto;
+			}
+			h2 {
+				padding: 0 5%;
 			}
 			span.price {
 				text-decoration: underline transparent;
@@ -176,4 +190,9 @@
 			}
 		}
 	}
+}
+
+// WooCommerce ordering padding
+.woocommerce-ordering {
+	padding-right: 1rem;
 }

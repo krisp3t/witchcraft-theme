@@ -1,0 +1,12 @@
+#shop-sidebar {
+	ul {
+		@include list-unstyled();
+		li {
+			padding-left: 1rem;
+		}
+	}
+
+	aside {
+		margin-bottom: 2rem;
+	}
+}

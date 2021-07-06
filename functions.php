@@ -97,10 +97,9 @@ function register_additional_childtheme_sidebars()
 		'after_title'   => '</h3>',
 	));
 }
-
-// Add shopping cart quantity
 add_action('init', 'register_additional_childtheme_sidebars');
 
+// Add shopping cart quantity
 add_action('wp_head', 'witch_shopping_cart_after', 100);
 
 function witch_shopping_cart_after()
