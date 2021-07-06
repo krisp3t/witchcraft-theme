@@ -11,10 +11,8 @@
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
 
-$container = get_theme_mod('understrap_container_type');
 ?>
-
-<?php get_template_part('sidebar-templates/sidebar', 'footerfull'); ?>
+<?php get_template_part('template-parts/sidebar-templates/sidebar', 'footerfull'); ?>
 
 <?php wp_footer(); ?>
 
