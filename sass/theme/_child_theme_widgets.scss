@@ -1,3 +1,23 @@
+// Global
+aside.widget {
+	margin-bottom: 2rem;
+	li {
+		margin: 0.5rem auto;
+	}
+}
+
+// WooCommerce
+.widget.woocommerce {
+	& > ul {
+		background: $gray-100;
+		box-shadow: $box-shadow-sm;
+	}
+	.product-categories {
+		list-style: none;
+		padding: $spacer * 1;
+	}
+}
+
 #shop-sidebar {
 	ul {
 		@include list-unstyled();
@@ -5,8 +25,12 @@
 			padding-left: 1rem;
 		}
 	}
+}
 
-	aside {
-		margin-bottom: 2rem;
-	}
+// Recent posts
+.widget span.post-date {
+	font-size: 0.75rem;
+	padding: 0.1rem;
+	color: $gray-600;
+	display: block;
 }

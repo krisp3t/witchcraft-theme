@@ -32,7 +32,6 @@
 		}
 	}
 }
-
 .woocommerce-input-wrapper {
 	.description {
 		background: $secondary;
@@ -42,7 +41,6 @@
 		}
 	}
 }
-
 .woocommerce-info {
 	border-top-color: $secondary;
 
@@ -50,24 +48,11 @@
 		color: $secondary;
 	}
 }
-
 .woocommerce-message {
 	border-top-color: $secondary;
 
 	&::before {
 		color: $secondary;
-	}
-}
-
-// Widget
-.widget.woocommerce {
-	& > ul {
-		background: $gray-100;
-		box-shadow: $box-shadow-sm;
-	}
-	.product-categories {
-		list-style: none;
-		padding: $spacer * 1;
 	}
 }
 
