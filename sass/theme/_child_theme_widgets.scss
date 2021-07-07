@@ -1,6 +1,13 @@
 // Global
 aside.widget {
 	margin-bottom: 2rem;
+	& > ul {
+		background: $gray-100;
+		box-shadow: $box-shadow-sm;
+		padding: $spacer * 0.5;
+		padding-left: 40px;
+		padding-right: 22px;
+	}
 	li {
 		margin: 0.5rem auto;
 	}
@@ -8,10 +15,6 @@ aside.widget {
 
 // WooCommerce
 .widget.woocommerce {
-	& > ul {
-		background: $gray-100;
-		box-shadow: $box-shadow-sm;
-	}
 	.product-categories {
 		list-style: none;
 		padding: $spacer * 1;
