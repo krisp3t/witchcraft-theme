@@ -87,6 +87,13 @@ h1 {
 		}
 	}
 }
+// Anchor link fix (account for header)
+:target::before {
+	content: "";
+	display: block;
+	height: 90px; /* fixed header height*/
+	margin: -90px 0 0; /* negative fixed header height */
+}
 
 // Blocks
 .hero-image {
