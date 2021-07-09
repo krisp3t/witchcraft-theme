@@ -38,6 +38,7 @@ $image_position = get_field('image_position') ?: 'flex-md-row';
 // Set up variables
 $flex = ($image_position === "left") ? "flex-md-row" : "flex-md-row-reverse";
 ?>
+
 <div id="<?php echo esc_attr($id); ?>" class="<?php echo esc_attr($className); ?> container-fluid witch-feature-container">
 	<div class="<?php echo "$flex $background_color"; ?> flex-column row my-4 shadow-sm border">
 		<div class="col p-3 d-flex align-content-center justify-content-center">

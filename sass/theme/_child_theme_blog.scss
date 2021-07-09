@@ -5,12 +5,17 @@
 			letter-spacing: $letter-spacing-lg;
 		}
 	}
+	.card-body {
+		img {
+			max-height: 200px;
+			object-fit: cover;
+		}
+	}
 	.entry-footer {
 		margin-top: -0.75rem;
 		.cat-links,
 		.cat-links a {
 			color: $secondary;
-			// word-break: break-all;
 			font-size: 0.75rem;
 		}
 	}
