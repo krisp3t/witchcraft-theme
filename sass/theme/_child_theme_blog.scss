@@ -1,0 +1,17 @@
+.witch-article {
+	.entry-header {
+		.entry-meta {
+			color: $primary;
+			letter-spacing: $letter-spacing-lg;
+		}
+	}
+	.entry-footer {
+		margin-top: -0.75rem;
+		.cat-links,
+		.cat-links a {
+			color: $secondary;
+			// word-break: break-all;
+			font-size: 0.75rem;
+		}
+	}
+}

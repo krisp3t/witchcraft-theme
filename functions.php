@@ -104,7 +104,7 @@ add_action('wp_head', 'witch_shopping_cart_after', 100);
 
 function witch_shopping_cart_after()
 { ?>
-	<style>
+	<style type='text/css'>
 		#main-nav .fa.fa-shopping-cart:after {
 			content: "<?php echo WC()->cart->get_cart_contents_count(); ?>";
 		}

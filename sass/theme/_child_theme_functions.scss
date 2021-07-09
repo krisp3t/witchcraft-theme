@@ -1,0 +1,15 @@
+@function color-contrast($color) {
+	@if (lightness($color) > 50) {
+		@return $gray-900;
+	} @else {
+		@return $gray-100;
+	}
+}
+
+@function color-match($color) {
+	@if (lightness($color) > 50) {
+		@return $gray-200;
+	} @else {
+		@return $gray-800;
+	}
+}

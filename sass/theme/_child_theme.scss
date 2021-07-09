@@ -1,22 +1,6 @@
 // Google Fonts
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700");
 
-// Functions
-@function color-contrast($color) {
-	@if (lightness($color) > 50) {
-		@return $gray-900;
-	} @else {
-		@return $gray-100;
-	}
-}
-@function color-match($color) {
-	@if (lightness($color) > 50) {
-		@return $gray-200;
-	} @else {
-		@return $gray-800;
-	}
-}
-
 // Utility classes
 .text-shadow {
 	text-shadow: $text-shadow;
@@ -167,4 +151,12 @@ h1 {
 	font-weight: bold;
 	font-size: 0.75rem;
 	line-height: 0.9rem;
+}
+
+// Pagination
+.pagination {
+	width: fit-content;
+	box-shadow: $box-shadow-xsm;
+	margin: auto;
+	margin-top: 3rem;
 }
