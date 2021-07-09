@@ -26,15 +26,15 @@ if (!empty($block['align'])) {
 
 
 // Load values and assign defaults.
-$column_1_icon = get_field('column_1_icon') ?: '';
-$column_2_icon = get_field('column_2_icon') ?: '';
-$column_3_icon = get_field('column_3_icon') ?: '';
-$column_1_title = get_field('column_1_title') ?: '';
-$column_2_title = get_field('column_2_title') ?: '';
-$column_3_title = get_field('column_3_title') ?: '';
-$column_1_text = get_field('column_1_text') ?: '';
-$column_2_text = get_field('column_2_text') ?: '';
-$column_3_text = get_field('column_3_text') ?: '';
+$column_1_icon = esc_attr(get_field('column_1_icon')) ?: '';
+$column_2_icon = esc_attr(get_field('column_2_icon')) ?: '';
+$column_3_icon = esc_attr(get_field('column_3_icon')) ?: '';
+$column_1_title = esc_html(get_field('column_1_title')) ?: '';
+$column_2_title = esc_html(get_field('column_2_title')) ?: '';
+$column_3_title = esc_html(get_field('column_3_title')) ?: '';
+$column_1_text = esc_html(get_field('column_1_text')) ?: '';
+$column_2_text = esc_html(get_field('column_2_text')) ?: '';
+$column_3_text = esc_html(get_field('column_3_text')) ?: '';
 
 
 ?>

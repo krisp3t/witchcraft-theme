@@ -24,12 +24,14 @@ $container = get_theme_mod('understrap_container_type');
 <!-- Carousel -->
 <div class="hero-image carousel slide shadow-sm" data-ride="carousel">
 	<div class="carousel-inner">
-		<div class="carousel-item active" style="--hero-background-url: url('<?php the_field('hero_image'); ?>'); --hero-background-position: <?php the_field('hero_image_position'); ?>%;">
+		<div class="carousel-item active" style="--hero-background-url: url('<?php echo esc_url(get_field('hero_image')); ?>'); --hero-background-position: <?php echo esc_attr(get_field('hero_image_position')); ?>%;">
 			<div class="container d-flex h-100 align-items-center justify-content-center">
 				<div class="carousel-caption">
-					<h1 class="text-shadow-lg"><?php the_field('hero_title'); ?></h1>
-					<p class="text-shadow-lg"><?php the_field('hero_subtitle'); ?></p>
-					<a href="<?php the_field('hero_button_link'); ?>"><button type="button" class="btn <?php the_field('hero_button_color'); ?> font-weight-bold"> <?php the_field('hero_button_text'); ?>
+					<h1 class="text-shadow-lg"><?php echo esc_html(get_field('hero_title')); ?></h1>
+					<p class="text-shadow-lg"><?php echo esc_html(get_field('hero_subtitle')); ?></p>
+					<a href="<?php echo esc_url(get_field('hero_button_link')); ?>">
+						<button type="button" class="btn <?php echo esc_attr(get_field('hero_button_color')); ?> font-weight-bold">
+							<?php echo esc_html(get_field('hero_button_text')); ?>
 						</button></a>
 				</div>
 			</div>

@@ -574,4 +574,73 @@ How far up/down the image will be displayed (0% for top, 100% for bottom)',
 		'description' => '',
 	));
 
+	acf_add_local_field_group(array(
+		'key' => 'group_60e819ebeea69',
+		'title' => 'Post Image',
+		'fields' => array(
+			array(
+				'key' => 'field_60e819f3ec000',
+				'label' => 'Post Image',
+				'name' => 'post_image',
+				'type' => 'image',
+				'instructions' => 'Image that will be displayed on blog page.',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'return_format' => 'url',
+				'preview_size' => 'medium',
+				'library' => 'all',
+				'min_width' => '',
+				'min_height' => '',
+				'min_size' => '',
+				'max_width' => '',
+				'max_height' => '',
+				'max_size' => '0.5',
+				'mime_types' => '',
+			),
+			array(
+				'key' => 'field_60e829cef2af9',
+				'label' => 'Post Image Position',
+				'name' => 'post_image_position',
+				'type' => 'range',
+				'instructions' => 'background-position-y property. <br>
+How far up/down the image will be displayed (0% for top, 100% for bottom)',
+				'required' => 0,
+				'conditional_logic' => 0,
+				'wrapper' => array(
+					'width' => '',
+					'class' => '',
+					'id' => '',
+				),
+				'default_value' => 30,
+				'min' => '',
+				'max' => '',
+				'step' => '',
+				'prepend' => '',
+				'append' => '',
+			),
+		),
+		'location' => array(
+			array(
+				array(
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'post',
+				),
+			),
+		),
+		'menu_order' => 0,
+		'position' => 'normal',
+		'style' => 'default',
+		'label_placement' => 'top',
+		'instruction_placement' => 'label',
+		'hide_on_screen' => '',
+		'active' => true,
+		'description' => '',
+	));
+
 endif;

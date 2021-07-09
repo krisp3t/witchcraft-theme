@@ -108,7 +108,7 @@ h1 {
 			color: #fff;
 		}
 		h1 {
-			font-size: Min(4rem, calc(2.3rem + 1.5vw));
+			font-size: Min(4rem, calc(2.3rem + 1.5vw)); // Min instead of min to use CSS function instead of Sass
 			margin-bottom: 0.5rem;
 		}
 		p {
@@ -136,7 +136,7 @@ h1 {
 	}
 }
 
-// Shopping cart number
+// Number of items in cart
 #main-nav .fa.fa-shopping-cart:after {
 	position: absolute;
 	border-radius: 50%;
