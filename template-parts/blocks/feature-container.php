@@ -24,13 +24,12 @@ if (!empty($block['align'])) {
 	$className .= ' align' . $block['align'];
 }
 
-// Checks
 $button_text_empty = "";
 // Load values and assign defaults.
-$image = esc_url(get_field('image') ?: null);
+$image = get_field('image') ?: null; // get ID
 $title = esc_html(get_field('title') ?: 'Your Title');
 $text = wp_kses(get_field('text') ?: 'Your text here...', '');
-$button_text = esc_html(get_field('button_text') ?: $button_text_empty = 'd-none');
+$button_text = esc_html(get_field('button_text') ?: $button_text_empty = 'd-none'); // if null, display none class
 $button_color = esc_attr(get_field('button_color') ?: 'button-secondary');
 $button_link = esc_url(get_field('button_link') ?: 'button-link');
 $background_color = esc_attr(get_field('background_color') ?: 'bg-primary');
