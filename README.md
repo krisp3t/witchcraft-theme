@@ -21,10 +21,12 @@ Based on UnderStrap Child. https://github.com/understrap/understrap-child
 
 ![Feature Containers](https://i.ibb.co/7CnQzYx/container.jpg)
 
-- Dynamic cart in navigation bar
-  > Use fa fa-shopping-cart as a custom link in your main menu to activate it
-
+- Dynamic cart in navigation bar 
 ![Dynamic cart](https://i.ibb.co/82CQKNf/cart.jpg)
+  - Use fa fa-shopping-cart as a custom link in your main menu to activate it
+  ![Custom menu link](https://i.ibb.co/VJFBnFg/Screenshot-2021-07-13-at-17-07-03.png)
+
+
 
 ## Installation
 
