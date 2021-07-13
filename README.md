@@ -53,6 +53,12 @@ So you have one clean CSS file at the end and just one request.
 
 Add your own JS files to `src/js/` to have them bundled into child-theme.js.
 
+## Compatibility
+
+Tested with WordPress 5.7.2 and WooCommerce 5.4.1.
+
+Requires [Advanced Custom Fields PRO](advancedcustomfields.com/), tested with 5.9.8.
+
 ## Developing With NPM, Gulp, SASS and Browser Sync
 
 ### Installing Dependencies
@@ -83,9 +89,3 @@ Or, to run with Browser-Sync:
 - then run: `$ gulp watch-bs`
 
 [1] Visit [https://browsersync.io/](https://browsersync.io/) for more information on Browser Sync
-
-## Compatibility
-
-Tested with WordPress 5.7.2 and WooCommerce 5.4.1.
-
-Requires [Advanced Custom Fields PRO](advancedcustomfields.com/), tested with 5.9.8.
