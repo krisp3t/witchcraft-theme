@@ -8,6 +8,12 @@
 .text-shadow-lg {
 	text-shadow: $text-shadow-lg;
 }
+.text-primary a {
+	color: $primary;
+}
+.text-secondary a {
+	color: $secondary;
+}
 
 $utility-colors: (
 	primary: $primary,
@@ -159,4 +165,16 @@ h1 {
 	box-shadow: $box-shadow-xsm;
 	margin: auto;
 	margin-top: 3rem;
+}
+
+// Comments area
+.comments-area {
+	#commentform {
+		.form-control {
+			box-shadow: $box-shadow-xsm;
+		}
+		#submit {
+			@extend .font-weight-bold;
+		}
+	}
 }

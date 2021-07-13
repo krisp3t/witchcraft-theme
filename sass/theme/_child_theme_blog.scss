@@ -1,11 +1,11 @@
+// Global
+.entry-meta {
+	color: $primary;
+	letter-spacing: $letter-spacing-lg;
+}
+
 // Article containers on blog page
 .witch-article {
-	.entry-header {
-		.entry-meta {
-			color: $primary;
-			letter-spacing: $letter-spacing-lg;
-		}
-	}
 	.card-body {
 		img {
 			max-height: 200px;
@@ -18,6 +18,14 @@
 		.cat-links a {
 			color: $secondary;
 			font-size: 0.75rem;
+		}
+	}
+}
+
+.comments-area {
+	#commentform {
+		.form-control {
+			box-shadow: $box-shadow-xsm;
 		}
 	}
 }

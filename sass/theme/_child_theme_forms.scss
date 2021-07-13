@@ -36,10 +36,10 @@ textarea {
 	@extend .form-control;
 }
 
-// submit button, inherit .btn and .btn-outline-primary classes.
+// submit button, inherit .btn and .btn-secondary classes.
 input[type="submit"] {
 	@extend .btn;
-	@extend .btn-primary;
+	@extend .btn-secondary;
 }
 
 .wpcf7 {

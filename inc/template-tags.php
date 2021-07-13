@@ -52,7 +52,7 @@ if (!function_exists('understrap_entry_footer')) {
 			$categories_list = get_the_category_list(esc_html__(' | ', 'understrap'));
 			if ($categories_list && understrap_categorized_blog()) {
 				/* translators: %s: Categories of current post */
-				printf('<small><span class="cat-links">' . esc_html__('%s', 'understrap') . '</span></small>', $categories_list); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+				printf('<small><span class="cat-links text-secondary">' . esc_html__('%s', 'understrap') . '</span></small>', $categories_list); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 			}
 		}
 		edit_post_link(
