@@ -1,38 +1,64 @@
-# understrap-child
-Basic Child Theme for Understrap Theme Framework: https://github.com/understrap/understrap
+# Witchcraft Theme
 
-## How it works
-Understrap Child Theme shares with the parent theme all PHP files and adds its own functions.php on top of the Understrap parent theme's functions.php.
+A theme for witches and wizards.
+Made for WordPress blogs and WooCommerce stores.
 
-**IT DOES NOT LOAD THE PARENT THEMES CSS FILE(S)!** Instead it uses the Understrap Parent Theme as a dependency via npm and compiles its own CSS file from it.
+Based on UnderStrap Child. https://github.com/understrap/understrap-child
 
-Understrap Child Theme uses the Enqueue method to load and sort the CSS file the right way instead of the old @import method.
+## Features
+
+- Full Bootstrap 4 support
+
+- Customizable Hero Image
+
+![Hero Image](https://i.ibb.co/Dp39dBr/hero.jpg)
+
+- Feature Columns with Font Awesome support, integrated into Gutenberg
+
+![Feature Columns](https://i.ibb.co/HY0CYxT/columns.jpg)
+
+- Feature Containers, integrated into Gutenberg
+
+![Feature Containers](https://i.ibb.co/7CnQzYx/container.jpg)
+
+- Dynamic cart in navigation bar 
+![Dynamic cart](https://i.ibb.co/82CQKNf/cart.jpg)
+  - Use fa fa-shopping-cart as a custom link in your main menu to activate it
+  ![Custom menu link](https://i.ibb.co/VJFBnFg/Screenshot-2021-07-13-at-17-07-03.png)
+
+
 
 ## Installation
-1. Install the parent theme Understrap first: `https://github.com/understrap/understrap` or `https://wordpress.org/themes/understrap/`
-   - IMPORTANT: If you download Understrap from GitHub make sure you rename the "understrap-master.zip" file to "understrap.zip" or you might have problems using this child theme!
-1. Upload the understrap-child folder to your wp-content/themes directory
-1. Go into your WP admin backend 
-1. Go to "Appearance -> Themes"
-1. Activate the Understrap Child theme
+
+1. Install the parent theme UnderStrap first: `https://github.com/understrap/understrap` or `https://wordpress.org/themes/understrap/`
+   - IMPORTANT: If you download UnderStrap from GitHub make sure you rename the "understrap-master.zip" file to "understrap.zip" or you might have problems using this child theme!
+1. Install [Advanced Custom Fields PRO](advancedcustomfields.com/) plugin.
+1. Upload the witchcraft-theme folder to your wp-content/themes directory.
+1. Go into your WP admin backend .
+1. Go to "Appearance -> Themes".
+1. Activate the Witchcraft Theme.
 
 ## Editing
-Add your own CSS styles to `/src/sass/theme/_child_theme.scss`
-or import you own files into `/src/sass/theme/understrap-child.scss`
 
-To overwrite Bootstrap's or Understrap's base variables just add your own value to:
-`/src/sass/theme/_child_theme_variables.scss`
+Add your own Sass styles to `/sass/theme/_child_theme.scss`
+or import your own files into `/sass/theme/child-theme.scss`.
 
-For example, the "$primary" variable is used by both Bootstrap and Understrap.
-
-Add your own color like: `$primary: #ff6600;` in `/src/sass/theme/_child_theme_variables.scss` to overwrite it. This change will automatically apply to all elements that use the $brand-primary variable.
+To overwrite Bootstrap's or UnderStrap's/Witchcraft Theme's base variables change:
+`/sass/theme/_child_theme_variables.scss`
 
 It will be outputted into:
 `/css/understrap-child.min.css` and `/css/understrap-child.css`
 
 So you have one clean CSS file at the end and just one request.
 
-Add your own JS files to `/src/js/` to have them bundled into `/js/child-theme.js` and `/js/child-theme.min.js`.
+Add your own JS files to `src/js/` to have them bundled into child-theme.js.
+
+## Compatibility
+
+Tested with WordPress 5.8.1 and WooCommerce 5.8.0.
+
+Requires [Advanced Custom Fields PRO](advancedcustomfields.com/), tested with 5.9.8.
+
 
 ## Developing With NPM, postCSS, Rollup, SASS and BrowserSync
 
@@ -78,4 +104,3 @@ then run:
 ```bash
 npm run watch
 ```
-
