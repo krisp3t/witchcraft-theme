@@ -104,9 +104,17 @@ function witch_shopping_cart_after()
 ?>
         <style type='text/css'>
             #main-nav .fa.fa-shopping-cart:after {
-                content: "<?php echo esc_attr(WC()->cart->get_cart_contents_count()); ?>";
+                content: "<?php
+                            if (!WC()->cart) {
+                                echo '0';
+                            } else {
+                                echo esc_attr(WC()->cart->get_cart_contents_count());
+                            } ?>
+";
+
             }
         </style>
+
 <?php  }
 }
 add_action('wp_head', 'witch_shopping_cart_after');
